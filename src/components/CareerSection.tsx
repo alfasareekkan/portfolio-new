@@ -10,41 +10,58 @@ const CareerSection = () => {
   const careerData = [
     {
       id: 1,
-      company: "TechCorp Solutions",
-      role: "Senior Software Engineer",
-      duration: "2022 - Present",
-      location: "San Francisco, CA",
-      description: "Leading full-stack development of enterprise applications, mentoring junior developers, and architecting scalable cloud solutions.",
+      company: "Skillrank",
+      role: "Team Lead",
+      duration: "2023 - Present",
+      location: "India",
+      description: "Leading development teams, architecting scalable solutions, and mentoring junior developers while driving technical excellence across projects.",
       achievements: [
-        "Improved application performance by 40%",
-        "Led team of 5 developers",
-        "Implemented CI/CD pipelines"
+        "Successfully led cross-functional development teams",
+        "Architected and delivered multiple high-impact projects",
+        "Mentored junior developers and improved team productivity",
+        "Implemented best practices and coding standards"
       ]
     },
     {
       id: 2,
-      company: "InnovateLab",
-      role: "Software Engineer",
-      duration: "2020 - 2022",
-      location: "Austin, TX",
-      description: "Developed modern web applications using React and Node.js, collaborated with cross-functional teams to deliver high-quality products.",
+      company: "Skillrank",
+      role: "Senior Software Engineer",
+      duration: "2022 - 2023",
+      location: "India",
+      description: "Developed complex web applications, led technical initiatives, and collaborated with cross-functional teams to deliver scalable solutions.",
       achievements: [
-        "Built 3 major customer-facing applications",
-        "Reduced bug reports by 60%",
-        "Introduced automated testing practices"
+        "Promoted to senior role within the organization",
+        "Led technical design and implementation of key features",
+        "Improved application performance and user experience",
+        "Collaborated effectively with product and design teams"
       ]
     },
     {
       id: 3,
-      company: "StartupXYZ",
-      role: "Junior Developer",
-      duration: "2019 - 2020",
-      location: "Remote",
-      description: "Started career building responsive web interfaces and learning best practices in software development.",
+      company: "Skillrank",
+      role: "Software Engineer",
+      duration: "2021 - 2022",
+      location: "India",
+      description: "Developed full-stack web applications using modern technologies, contributed to product development, and gained expertise in software engineering practices.",
       achievements: [
-        "Delivered first major project on time",
-        "Learned 5 new technologies",
-        "Contributed to open-source projects"
+        "Successfully transitioned from intern to full-time engineer",
+        "Delivered multiple features and bug fixes",
+        "Gained proficiency in React, Node.js, and database technologies",
+        "Contributed to code reviews and team knowledge sharing"
+      ]
+    },
+    {
+      id: 4,
+      company: "Brototype",
+      role: "Software Engineering Intern",
+      duration: "2020 - 2021",
+      location: "India",
+      description: "Started my software engineering journey as an intern, learning fundamental programming concepts, web development technologies, and industry best practices.",
+      achievements: [
+        "Completed comprehensive software engineering bootcamp",
+        "Built first web applications using HTML, CSS, and JavaScript",
+        "Learned React.js and modern web development practices",
+        "Successfully transitioned to full-time software engineer role"
       ]
     }
   ];
