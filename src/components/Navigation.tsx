@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Home, User, Briefcase, FolderOpen, Github, BookOpen } from 'lucide-react';
+import { Home, User, Briefcase, FolderOpen, BookOpen } from 'lucide-react';
 
 interface NavigationProps {
   activeSection: string;
@@ -12,7 +12,6 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
     { id: 'about', icon: User, label: 'About' },
     { id: 'career', icon: Briefcase, label: 'Career' },
     { id: 'projects', icon: FolderOpen, label: 'Projects' },
-    { id: 'github', icon: Github, label: 'GitHub' },
     { id: 'blog', icon: BookOpen, label: 'Blog' },
   ];
 

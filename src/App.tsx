@@ -5,7 +5,6 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import CareerSection from './components/CareerSection';
 import ProjectsSection from './components/ProjectsSection';
-import GitHubSection from './components/GitHubSection';
 import BlogSection from './components/BlogSection';
 import Navigation from './components/Navigation';
 import CustomCursor from './components/CustomCursor';
@@ -20,7 +19,6 @@ function App() {
     { id: 'about', component: AboutSection },
     { id: 'career', component: CareerSection },
     { id: 'projects', component: ProjectsSection },
-    { id: 'github', component: GitHubSection },
     { id: 'blog', component: BlogSection },
   ];
 
