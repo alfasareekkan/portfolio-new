@@ -12,7 +12,7 @@ const CareerSection = () => {
       id: 1,
       company: "Skillrank",
       role: "Team Lead",
-      duration: "2023 - Present",
+      duration: "2024 - Present",
       location: "India",
       description: "Leading development teams, architecting scalable solutions, and mentoring junior developers while driving technical excellence across projects.",
       achievements: [
@@ -26,7 +26,7 @@ const CareerSection = () => {
       id: 2,
       company: "Skillrank",
       role: "Senior Software Engineer",
-      duration: "2022 - 2023",
+      duration: "2023 - 2024",
       location: "India",
       description: "Developed complex web applications, led technical initiatives, and collaborated with cross-functional teams to deliver scalable solutions.",
       achievements: [
@@ -40,7 +40,7 @@ const CareerSection = () => {
       id: 3,
       company: "Skillrank",
       role: "Software Engineer",
-      duration: "2021 - 2022",
+      duration: "2022 - 2023",
       location: "India",
       description: "Developed full-stack web applications using modern technologies, contributed to product development, and gained expertise in software engineering practices.",
       achievements: [
@@ -54,7 +54,7 @@ const CareerSection = () => {
       id: 4,
       company: "Brototype",
       role: "Software Engineering Intern",
-      duration: "2020 - 2021",
+      duration: "2021 - 2022",
       location: "India",
       description: "Started my software engineering journey as an intern, learning fundamental programming concepts, web development technologies, and industry best practices.",
       achievements: [
