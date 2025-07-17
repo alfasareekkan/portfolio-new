@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #06b6d4, #3b82f6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #0891b2, #2563eb);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Glowing border animation */
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
+  }
+}
+
+.glow-animation {
+  animation: glow 2s ease-in-out infinite;
+}
+
+/* Particle background */
+.particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: rgba(6, 182, 212, 0.4);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.8;
+  }
+}
+
+/* Grid background */
+.grid-bg {
+  background-image: 
+    linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
