@@ -139,7 +139,13 @@ const HeroSection = () => {
           className="flex justify-center"
         >
           <motion.button
-            className="glass px-8 py-4 rounded-full text-cyan-400 border border-cyan-400/30 hover:border-cyan-400 transition-all duration-300 flex items-center gap-2 glow-animation"
+            onClick={() => {
+              const projectsSection = document.getElementById('projects');
+              if (projectsSection) {
+                projectsSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="glass px-8 py-4 rounded-full text-cyan-400 border border-cyan-400/30 hover:border-cyan-400 transition-all duration-300 flex items-center gap-2 glow-animation cursor-pointer"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
