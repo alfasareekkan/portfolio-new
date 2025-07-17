@@ -105,7 +105,7 @@ const HeroSection = () => {
           className="text-6xl md:text-8xl font-bold mb-4"
           variants={titleVariants}
         >
-          {['M', 'o', 'h', 'a', 'm', 'm', 'e', 'd', ' ', 'A', 'l', 'f', 'a', 's', ' ', 'A'].map((letter, index) => (
+          {['M', 'o', 'h', 'a', 'm', 'm', 'e', 'd', ' ', 'A', 'l', 'f', 'a', 's'].map((letter, index) => (
             <motion.span
               key={index}
               variants={letterVariants}
