@@ -24,13 +24,13 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
 
   return (
     <motion.nav
-      className="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50"
+      className="fixed bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-50 w-auto"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 1 }}
     >
-      <div className="glass px-4 py-3 rounded-full border border-cyan-400/30 backdrop-blur-md">
-        <div className="flex items-center gap-2">
+      <div className="glass px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-cyan-400/30 backdrop-blur-md">
+        <div className="flex items-center gap-1 sm:gap-2">
           {navItems.map(({ id, icon: Icon, label }) => {
             const isActive = activeSection === id;
             
@@ -46,28 +46,39 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
                 whileHover={{ scale: 1.1, y: -2 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Icon className="w-5 h-5" />
+                <Icon className="w-4 h-4 sm:w-5 sm:h-5" />
                 
                 {/* Active indicator */}
                 {isActive && (
                   <motion.div
-                    className="absolute -top-1 -right-1 w-3 h-3 bg-cyan-400 rounded-full"
+                    className="absolute -top-0.5 -right-0.5 sm:-top-1 sm:-right-1 w-2 h-2 sm:w-3 sm:h-3 bg-cyan-400 rounded-full"
                     layoutId="activeIndicator"
                     transition={{ type: "spring", stiffness: 300, damping: 30 }}
                   />
                 )}
                 
                 {/* Tooltip */}
-                <motion.div
-                  className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 pointer-events-none"
-                  whileHover={{ opacity: 1 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <div className="glass px-2 py-1 rounded text-xs text-white whitespace-nowrap border border-cyan-400/30">
+                <div className="hidden sm:block">
+                  <motion.div
+                    className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 opacity-0 pointer-events-none"
+                    whileHover={{ opacity: 1 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <div className="glass px-2 py-1 rounded text-xs text-white whitespace-nowrap border border-cyan-400/30">
+                      {label}
+                    </div>
+                    <div className="w-2 h-2 bg-gray-800 border-r border-b border-cyan-400/30 transform rotate-45 mx-auto -mt-1"></div>
+                  </motion.div>
+                </div>
+
+                {/* Mobile label */}
+                <div className="sm:hidden absolute -bottom-8 left-1/2 transform -translate-x-1/2">
+                  <div className={`text-xs transition-opacity duration-200 ${
+                    isActive ? 'opacity-100 text-cyan-400' : 'opacity-0'
+                  }`}>
                     {label}
                   </div>
-                  <div className="w-2 h-2 bg-gray-800 border-r border-b border-cyan-400/30 transform rotate-45 mx-auto -mt-1"></div>
-                </motion.div>
+                </div>
 
                 {/* Glow effect for active item */}
                 {isActive && (
