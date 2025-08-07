@@ -24,12 +24,12 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
 
   return (
     <motion.nav
-      className="fixed bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 z-50 w-auto"
+      className="fixed bottom-4 sm:bottom-8 left-0 right-0 z-50 flex justify-center"
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, delay: 1 }}
     >
-      <div className="glass px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-cyan-400/30 backdrop-blur-md">
+      <div className="glass px-3 sm:px-4 py-2 sm:py-3 rounded-full border border-cyan-400/30 backdrop-blur-md w-auto">
         <div className="flex items-center gap-1 sm:gap-2">
           {navItems.map(({ id, icon: Icon, label }) => {
             const isActive = activeSection === id;
